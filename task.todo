@@ -5,8 +5,8 @@ Rise-Blog-Backend:
         ✔ Configuration de l'application express avec router & express.json @started(23-09-07 00:04) @done(23-09-07 00:04) @lasted(42s)
         ✔ Test de fonctionnement avec une home route @started(23-09-07 00:05) @done(23-09-07 00:05) @lasted(7s)
         ✔ Structure de base du projet: creation des dossiers et fichiers @done(23-09-07 00:15)
-        ☐ Configuration de l'acces à la base de donnée Compass: `rise-blog`
-        ☐ Test final: bd + Home route
+        ✔ Configuration de l'acces à la base de donnée Compass: `rise-blog` @done(23-09-13 22:37)
+        ✔ Test final: bd + Home route @done(23-09-13 22:37)
 
     Configuration d'Insomnia:
         ✔ Installation d'Insomnia @done(23-09-08 01:00)
@@ -17,14 +17,14 @@ Rise-Blog-Backend:
         ✔ Ajout de la requette GET home & test d'insomnia @done(23-09-12 16:34)
 
     Configuration de Git-Github:
-        ☐ Creation du compte github
-        ☐ Configuration de git (user.email, user.name)
-        ☐ Connexion de github à VsCode
-        ☐ Initiation du projet git (git init)
-        ☐ first commit sur un repo + branche @api
+        ✔ Creation du compte github @done(23-09-12 17:08)
+        ✔ Configuration de git (user.email, user.name) @done(23-09-12 17:09)
+        ✔ Connexion de github à VsCode @done(23-09-12 17:09)
+        ✔ Initiation du projet git (git init) @done(23-09-12 17:09)
+        ✔ first commit sur un repo + branche @api @done(23-09-12 17:09)
 
     CRUD `topics`:
-        ☐ creation du model
+        ✔ creation du model @done(23-09-13 22:37)
         Create :
             ☐ creation de la route
             ☐ Creation du controleur
@@ -43,7 +43,7 @@ Rise-Blog-Backend:
                 ☐ suppression du document lié au `topic` en bd
     
     CRUD `comments`:
-        ☐ creation du model
+        ✔ creation du model @done(23-09-13 22:38)
         Create :
             ☐ creation de la route
             ☐ Creation du controleur
@@ -63,7 +63,7 @@ Rise-Blog-Backend:
                 ☐ suppression du document lié au `comments` en bd
     
     CRUD `article`:
-        ☐ creation du model 
+        ✔ creation du model @done(23-09-13 22:38)
         Create:
             ☐ creation de la route
             ☐ Creation du controleur
@@ -93,7 +93,7 @@ Rise-Blog-Backend:
                 ☐ suppression du document lié à `article` en bd
     
     CRUD `user`:
-        ☐ creation du model 
+        ✔ creation du model @done(23-09-15 21:21)
         Create:
             ☐ creation de la route
             ☐ Creation du controleur
