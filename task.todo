@@ -26,41 +26,41 @@ Rise-Blog-Backend:
     CRUD `topics`:
         ✔ creation du model @done(23-09-13 22:37)
         Create :
-            ☐ creation de la route
-            ☐ Creation du controleur
+            ✔ creation de la route @done(23-09-17 17:28)
+            ✔ Creation du controleur @done(23-09-17 17:29)
             ☐ Ajout du middleware d'upload de fichiers @critical(apres la mise en place du _fileUploadMiddleware_)
         READ @All & @key[_id] :
-            ☐ creation de la route (readAll - byId)
-            ☐ ecriture des controleurs et renvoie de la reponse (readAll & byId) @attention: ne pas populate
+            ✔ creation de la route (readAll - byId) @done(23-09-17 17:29)
+            ✔ ecriture des controleurs et renvoie de la reponse (readAll & byId) @attention: ne pas populate @done(23-09-17 17:29)
         UPDATE - @key[_id] (mise à jour du nom et/ou de la photo) :
-            ☐ creation de la route
-            ☐ creation du controller: ici on renvoie comme reponse les nouvelles infos
+            ✔ creation de la route @done(23-09-17 18:20)
+            ✔ creation du controller: ici on renvoie comme reponse les nouvelles infos @done(23-09-17 18:20)
             ☐ ajout du middleware d'upload de fichiers @critical(apres la mise en place du _fileUploadMiddleware_) 
         DELETE @key[_id] :
-            ☐ creation de la route 
-            ☐ Creation du controleur: 
+            ✔ creation de la route @done(23-09-17 18:20)
+            ✔ Creation du controleur: @done(23-09-17 18:20)
                 ☐ Suppression du lien (_id en topics) dans tous les articles enfants @high(apres creation de _article_)
-                ☐ suppression du document lié au `topic` en bd
+                ✔ suppression du document lié au `topic` en bd @done(23-09-17 18:21)
     
     CRUD `comments`:
         ✔ creation du model @done(23-09-13 22:38)
         Create :
-            ☐ creation de la route
-            ☐ Creation du controleur
+            ✔ creation de la route @done(23-09-18 12:02)
+            ✔ Creation du controleur @done(23-09-18 12:02)
                 ☐ Ajout du lien avec l'article concerné @high(apres la creation de _article_) 
         READ (All & byId & byAuthor):
-            ☐ creation de la route (readAll - byId)
+            ✔ creation de la route (readAll - byId) @done(23-09-18 12:02)
             ☐ ecriture des controleurs et renvoie de la reponse (readAll & byId) @populate: author
 
-            ☐ get comments by author @key[authorId]  @high(Will use user_Id contaided contained in req object and extracted from bearer token  )
+            ✔ get comments by author @key[authorId]  @high(Will use user_Id contaided contained in req object and extracted from bearer token  ) @done(23-09-18 12:02)
         UPDATE - @key[_id] (contenu du commentaire) :
-            ☐ creation de la route
-            ☐ creation du controleur: ici on renvoie comme reponse les nouvelles infos
+            ✔ creation de la route @done(23-09-18 12:02)
+            ✔ creation du controleur: ici on renvoie comme reponse les nouvelles infos @done(23-09-18 12:03)
         DELETE - @key[_id] :
-            ☐ creation de la route 
-            ☐ Creation du controleur: 
-                ☐ Suppression du lien _id l'article en lien @high(apres creation de _article_)
-                ☐ suppression du document lié au `comments` en bd
+            ✔ creation de la route @done(23-09-18 12:03)
+            ✔ Creation du controleur: @done(23-09-18 12:03)
+                ✔ Suppression du lien _id l'article en lien @high(apres creation de _article_) @done(23-09-18 12:03)
+                ✔ suppression du document lié au `comments` en bd @done(23-09-18 12:03)
     
     CRUD `article`:
         ✔ creation du model @done(23-09-13 22:38)
@@ -100,15 +100,15 @@ Rise-Blog-Backend:
 
             ☐ Ajout d'une photo de profil @exercise 
         READ (All & byId) :
-            ☐ creation de la route (readAll - byId)
+            ✔ creation de la route (readAll - byId) @done(23-09-15 22:44)
             ☐ écriture des controleurs et renvoie de la reponse (readAll & byId)
         UPDATE - @key[_id] (nom de l'utilisateur et photo de profil)  @exercise:
-            ☐ creation de la route
+            ✔ creation de la route @done(23-09-15 22:44)
             ☐ creation du controleur: ici on renvoie comme reponse les nouvelles infos
             
             ☐ mise à jour de la photo de profil  @exercise 
         DELETE - @key[_id] :
-            ☐ creation de la route 
+            ✔ creation de la route @done(23-09-15 22:44)
             ☐ Creation du controleur:
                 ☐ Suppression de tous les commentaires liés à l'utilisateur 
                 ☐ Suppression de tous les likes liés à l'utilisateur (pull _id from likes in articleModel ) 

@@ -1,17 +1,17 @@
 const mongoose = require('mongoose')
 
 const topicSchema = new mongoose.Schema({
-    label:{
-        type: string,
-        require: true,
+    label: {
+        type: String,
+        required: true,
         unique: true,
     },
     articles:[{
         type:mongoose.Types.ObjectId,
-        ref: articles,
+        ref: "Articles",
     }],
     landing: {
-        type:string,
+        type:String,
         default: "/public/images/topics/environment.png"
          
     }

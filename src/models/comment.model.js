@@ -9,11 +9,11 @@ const commentSchema = new mongoose.Schema({
     },
     articles:{
         type:mongoose.Types.ObjectId,
-        ref: Articles,
+        ref: "Articles",
         required: true,
     },
     content: {
-        type:string,
+        type: String,
         required: true,
         
     },
