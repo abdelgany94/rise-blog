@@ -2,20 +2,20 @@ const mongoose = require('mongoose')
 
 const articleSchema = new mongoose.Schema({
     title:{
-        type: string,
+        type: String,
         require: true,
     },
     slug:{
-        type: string,
+        type: String,
         required: true,
         unique: true,
     },
     landing: {
-        type:string,
+        type:String,
         default: "/public/images/topics/environment.png",
     },   
     content: {
-        type: string,
+        type: String,
         required: true,
     },
      
@@ -35,6 +35,6 @@ const articleSchema = new mongoose.Schema({
     
 });
 
-const ArticlecModel = new mongoose.model('Article', articleSchema);
+const ArticleModel = new mongoose.model('Articles', articleSchema);
 
 module.exports = { ArticleModel };

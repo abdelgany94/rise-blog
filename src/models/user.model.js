@@ -11,11 +11,11 @@ const validateEmail = (email) => {
   };
 const userSchema = new mongoose.Schema({
     name:{
-        type: string,
+        type: String,
         required: true,
     },
     email:{
-        type: string,
+        type: String,
         required: true,
         unique: true,
         validate: {
@@ -24,13 +24,13 @@ const userSchema = new mongoose.Schema({
           },
     },
     password: {
-        type:string,
+        type:String,
         required: true,
         select: false,
 
     },   
     content: {
-        type: string,
+        type: String,
         required: true,
     },
     articles: [{
@@ -47,6 +47,6 @@ const userSchema = new mongoose.Schema({
     }], 
 });
 
-constusercModel = new mongoose.model('User',userSchema);
+const UserModel = new mongoose.model('User',userSchema);
 
-module.exports = {userModel };
+module.exports = { UserModel };
